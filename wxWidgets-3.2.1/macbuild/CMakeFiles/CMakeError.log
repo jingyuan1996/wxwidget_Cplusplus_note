@@ -1,0 +1,376 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the OBJCXX compiler identification source file "CMakeOBJCXXCompilerId.mm" failed.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Performing C++ SOURCE FILE Test ICONV_SECOND_ARGUMENT_IS_CONST failed with the following output:
+Change Dir: /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_02492/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_02492.dir/build.make CMakeFiles/cmTC_02492.dir/build
+Building CXX object CMakeFiles/cmTC_02492.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DICONV_SECOND_ARGUMENT_IS_CONST  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -mmacosx-version-min=10.10 -std=gnu++11 -MD -MT CMakeFiles/cmTC_02492.dir/src.cxx.o -MF CMakeFiles/cmTC_02492.dir/src.cxx.o.d -o CMakeFiles/cmTC_02492.dir/src.cxx.o -c /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/src.cxx
+/Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/src.cxx:9:5: error: no matching function for call to 'iconv'
+    iconv(conv, &in, &ilen, &out, &olen);
+    ^~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/usr/include/iconv.h:75:39: note: candidate function not viable: no known conversion from 'const char **' to 'char **' for 2nd argument
+extern __LIBICONV_DLL_EXPORTED size_t iconv (iconv_t __cd, char* * __restrict __inbuf, size_t * __restrict __inbytesleft, char* * __restrict __outbuf, size_t * __restrict __outbytesleft);
+                                      ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_02492.dir/src.cxx.o] Error 1
+make: *** [cmTC_02492/fast] Error 2
+
+
+Source file was:
+
+  #include <iconv.h>
+  int main(){
+    iconv_t conv = 0;
+    const char* in = 0;
+    size_t ilen = 0;
+    char* out = 0;
+    size_t olen = 0;
+    iconv(conv, &in, &ilen, &out, &olen);
+    return 0;
+  }
+
+Performing C++ SOURCE FILE Test HAVE_HASH_MAP failed with the following output:
+Change Dir: /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e3be8/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e3be8.dir/build.make CMakeFiles/cmTC_e3be8.dir/build
+Building CXX object CMakeFiles/cmTC_e3be8.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_HASH_MAP -D__BSD__ -D__DARWIN__ -D__UNIX__ -DwxUSE_UNIX  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -mmacosx-version-min=10.10 -std=gnu++11 -MD -MT CMakeFiles/cmTC_e3be8.dir/src.cxx.o -MF CMakeFiles/cmTC_e3be8.dir/src.cxx.o.d -o CMakeFiles/cmTC_e3be8.dir/src.cxx.o -c /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/src.cxx
+/Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/src.cxx:1:10: fatal error: 'hash_map' file not found
+#include <hash_map>
+         ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_e3be8.dir/src.cxx.o] Error 1
+make: *** [cmTC_e3be8/fast] Error 2
+
+
+Source file was:
+#include <hash_map>
+#include <hash_set>
+
+
+int main(int argc, char* argv[]) {
+ 
+    std::hash_map<double*, char*, std::hash<double*>, std::equal_to<double*> > test1;
+    std::hash_set<char*, std::hash<char*>, std::equal_to<char*> > test2;
+return 0; }
+Performing C++ SOURCE FILE Test HAVE_TR1_UNORDERED_MAP failed with the following output:
+Change Dir: /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6c65f/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_6c65f.dir/build.make CMakeFiles/cmTC_6c65f.dir/build
+Building CXX object CMakeFiles/cmTC_6c65f.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_TR1_UNORDERED_MAP -D__BSD__ -D__DARWIN__ -D__UNIX__ -DwxUSE_UNIX  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -mmacosx-version-min=10.10 -std=gnu++11 -MD -MT CMakeFiles/cmTC_6c65f.dir/src.cxx.o -MF CMakeFiles/cmTC_6c65f.dir/src.cxx.o.d -o CMakeFiles/cmTC_6c65f.dir/src.cxx.o -c /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/src.cxx
+/Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/src.cxx:1:10: fatal error: 'tr1/unordered_map' file not found
+#include <tr1/unordered_map>
+         ^~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_6c65f.dir/src.cxx.o] Error 1
+make: *** [cmTC_6c65f/fast] Error 2
+
+
+Source file was:
+#include <tr1/unordered_map>
+#include <tr1/unordered_set>
+
+
+int main(int argc, char* argv[]) {
+ 
+    std::tr1::unordered_map<double*, char*> test1;
+    std::tr1::unordered_set<char*> test2;
+return 0; }
+Determining if the include file sys/soundcard.h exists failed with the following output:
+Change Dir: /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_41f29/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_41f29.dir/build.make CMakeFiles/cmTC_41f29.dir/build
+Building C object CMakeFiles/cmTC_41f29.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D__BSD__ -D__DARWIN__ -D__UNIX__ -DwxUSE_UNIX  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -mmacosx-version-min=10.10 -MD -MT CMakeFiles/cmTC_41f29.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_41f29.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_41f29.dir/CheckIncludeFile.c.o -c /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'sys/soundcard.h' file not found
+#include <sys/soundcard.h>
+         ^~~~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_41f29.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_41f29/fast] Error 2
+
+
+
+Determining if the gethostbyname_r exist failed with the following output:
+Change Dir: /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cc3b2/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_cc3b2.dir/build.make CMakeFiles/cmTC_cc3b2.dir/build
+Building C object CMakeFiles/cmTC_cc3b2.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D__BSD__ -D__DARWIN__ -D__UNIX__ -DwxUSE_UNIX  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -mmacosx-version-min=10.10 -MD -MT CMakeFiles/cmTC_cc3b2.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_cc3b2.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_cc3b2.dir/CheckSymbolExists.c.o -c /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'gethostbyname_r'
+  return ((int*)(&gethostbyname_r))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_cc3b2.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_cc3b2/fast] Error 2
+
+
+File /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netdb.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef gethostbyname_r
+  return ((int*)(&gethostbyname_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C++ SOURCE FILE Test HAVE_ABI_FORCEDUNWIND failed with the following output:
+Change Dir: /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6d273/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_6d273.dir/build.make CMakeFiles/cmTC_6d273.dir/build
+Building CXX object CMakeFiles/cmTC_6d273.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_ABI_FORCEDUNWIND  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -mmacosx-version-min=10.10 -std=gnu++11 -MD -MT CMakeFiles/cmTC_6d273.dir/src.cxx.o -MF CMakeFiles/cmTC_6d273.dir/src.cxx.o.d -o CMakeFiles/cmTC_6d273.dir/src.cxx.o -c /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/src.cxx
+/Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/src.cxx:5:16: error: no type named '__forced_unwind' in namespace '__cxxabiv1'
+ void foo(abi::__forced_unwind&);
+          ~~~~~^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_6d273.dir/src.cxx.o] Error 1
+make: *** [cmTC_6d273/fast] Error 2
+
+
+Source file was:
+#include <cxxabi.h>
+
+
+int main(int argc, char* argv[]) {
+ void foo(abi::__forced_unwind&);
+return 0; }
+Performing C++ SOURCE FILE Test wxSIZE_T_IS_NOT_ULONG failed with the following output:
+Change Dir: /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ef8a4/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ef8a4.dir/build.make CMakeFiles/cmTC_ef8a4.dir/build
+Building CXX object CMakeFiles/cmTC_ef8a4.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -D__BSD__ -D__DARWIN__ -D__UNIX__ -DwxSIZE_T_IS_NOT_ULONG -DwxUSE_UNIX  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -mmacosx-version-min=10.10 -std=gnu++11 -MD -MT CMakeFiles/cmTC_ef8a4.dir/src.cxx.o -MF CMakeFiles/cmTC_ef8a4.dir/src.cxx.o.d -o CMakeFiles/cmTC_ef8a4.dir/src.cxx.o -c /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/src.cxx
+/Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/src.cxx:7:49: error: class member cannot be redeclared
+            struct Foo { void foo(size_t); void foo(unsigned long); };
+                                                ^
+/Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/src.cxx:7:31: note: previous declaration is here
+            struct Foo { void foo(size_t); void foo(unsigned long); };
+                              ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_ef8a4.dir/src.cxx.o] Error 1
+make: *** [cmTC_ef8a4/fast] Error 2
+
+
+Source file was:
+#include <stddef.h>
+
+
+int main(int argc, char* argv[]) {
+ return 0; }
+
+            struct Foo { void foo(size_t); void foo(unsigned long); };
+
+            int bar() {
+return 0; }
+Determining if the ftime exist failed with the following output:
+Change Dir: /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3174e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_3174e.dir/build.make CMakeFiles/cmTC_3174e.dir/build
+Building C object CMakeFiles/cmTC_3174e.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D__BSD__ -D__DARWIN__ -D__UNIX__ -DwxUSE_UNIX  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -mmacosx-version-min=10.10 -MD -MT CMakeFiles/cmTC_3174e.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_3174e.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_3174e.dir/CheckSymbolExists.c.o -c /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'ftime'
+  return ((int*)(&ftime))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_3174e.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_3174e/fast] Error 2
+
+
+File /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <wchar.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef ftime
+  return ((int*)(&ftime))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the putws exist failed with the following output:
+Change Dir: /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2c4ba/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_2c4ba.dir/build.make CMakeFiles/cmTC_2c4ba.dir/build
+Building C object CMakeFiles/cmTC_2c4ba.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D__BSD__ -D__DARWIN__ -D__UNIX__ -DwxUSE_UNIX  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -mmacosx-version-min=10.10 -MD -MT CMakeFiles/cmTC_2c4ba.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_2c4ba.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_2c4ba.dir/CheckSymbolExists.c.o -c /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'putws'
+  return ((int*)(&putws))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_2c4ba.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_2c4ba/fast] Error 2
+
+
+File /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <wchar.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef putws
+  return ((int*)(&putws))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcsrctombs exist failed with the following output:
+Change Dir: /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c1780/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_c1780.dir/build.make CMakeFiles/cmTC_c1780.dir/build
+Building C object CMakeFiles/cmTC_c1780.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D__BSD__ -D__DARWIN__ -D__UNIX__ -DwxUSE_UNIX  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -mmacosx-version-min=10.10 -MD -MT CMakeFiles/cmTC_c1780.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_c1780.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_c1780.dir/CheckSymbolExists.c.o -c /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'wcsrctombs'; did you mean 'wcsrtombs'?
+  return ((int*)(&wcsrctombs))[argc];
+                  ^~~~~~~~~~
+                  wcsrtombs
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/usr/include/wchar.h:138:8: note: 'wcsrtombs' declared here
+size_t  wcsrtombs(char * __restrict, const wchar_t ** __restrict, size_t,
+        ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_c1780.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_c1780/fast] Error 2
+
+
+File /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <wchar.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcsrctombs
+  return ((int*)(&wcsrctombs))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the round exist failed with the following output:
+Change Dir: /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_375c9/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_375c9.dir/build.make CMakeFiles/cmTC_375c9.dir/build
+Building CXX object CMakeFiles/cmTC_375c9.dir/CheckSymbolExists.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -D__BSD__ -D__DARWIN__ -D__UNIX__ -DwxUSE_UNIX  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -mmacosx-version-min=10.10 -std=gnu++11 -MD -MT CMakeFiles/cmTC_375c9.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_375c9.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_375c9.dir/CheckSymbolExists.cxx.o -c /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: address of overloaded function 'round' does not match required type 'int'
+  return ((int*)(&round))[argc];
+                  ^~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/usr/include/c++/v1/math.h:1663:46: note: candidate function
+inline _LIBCPP_INLINE_VISIBILITY long double round(long double __lcpp_x) _NOEXCEPT
+                                             ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/usr/include/c++/v1/math.h:1655:46: note: candidate function
+inline _LIBCPP_INLINE_VISIBILITY float       round(float __lcpp_x) _NOEXCEPT
+                                             ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/usr/include/math.h:476:15: note: candidate function
+extern double round(double);
+              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/usr/include/c++/v1/math.h:1675:1: note: candidate template ignored: could not match 'typename std::enable_if<std::is_integral<_A1>::value, double>::type (_A1) noexcept' against 'int'
+round(_A1 __lcpp_x) _NOEXCEPT
+^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_375c9.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTC_375c9/fast] Error 2
+
+
+File /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef round
+  return ((int*)(&round))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file tr1/type_traits exists failed with the following output:
+Change Dir: /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_18596/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_18596.dir/build.make CMakeFiles/cmTC_18596.dir/build
+Building CXX object CMakeFiles/cmTC_18596.dir/CheckIncludeFile.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -D__BSD__ -D__DARWIN__ -D__UNIX__ -DwxUSE_UNIX  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -mmacosx-version-min=10.10 -std=gnu++11 -MD -MT CMakeFiles/cmTC_18596.dir/CheckIncludeFile.cxx.o -MF CMakeFiles/cmTC_18596.dir/CheckIncludeFile.cxx.o.d -o CMakeFiles/cmTC_18596.dir/CheckIncludeFile.cxx.o -c /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:10: fatal error: 'tr1/type_traits' file not found
+#include <tr1/type_traits>
+         ^~~~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_18596.dir/CheckIncludeFile.cxx.o] Error 1
+make: *** [cmTC_18596/fast] Error 2
+
+
+
+Determining if the include file wcstr.h exists failed with the following output:
+Change Dir: /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5b497/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_5b497.dir/build.make CMakeFiles/cmTC_5b497.dir/build
+Building C object CMakeFiles/cmTC_5b497.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D__BSD__ -D__DARWIN__ -D__UNIX__ -DwxUSE_UNIX  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -mmacosx-version-min=10.10 -MD -MT CMakeFiles/cmTC_5b497.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_5b497.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_5b497.dir/CheckIncludeFile.c.o -c /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'wcstr.h' file not found
+#include <wcstr.h>
+         ^~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_5b497.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_5b497/fast] Error 2
+
+
+
+Determining if the include file sys/inotify.h exists failed with the following output:
+Change Dir: /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_10e98/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_10e98.dir/build.make CMakeFiles/cmTC_10e98.dir/build
+Building C object CMakeFiles/cmTC_10e98.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D__BSD__ -D__DARWIN__ -D__UNIX__ -DwxUSE_UNIX  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -mmacosx-version-min=10.10 -MD -MT CMakeFiles/cmTC_10e98.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_10e98.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_10e98.dir/CheckIncludeFile.c.o -c /Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/jingyuanchew/Downloads/wxWidgets-3.2.1/macbuild/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'sys/inotify.h' file not found
+#include <sys/inotify.h>
+         ^~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_10e98.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_10e98/fast] Error 2
+
+
+

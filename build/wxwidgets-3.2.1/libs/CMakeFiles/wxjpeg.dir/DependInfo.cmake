@@ -1,0 +1,64 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jaricom.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jaricom.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jaricom.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jcapimin.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcapimin.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcapimin.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jcapistd.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcapistd.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcapistd.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jcarith.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcarith.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcarith.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jccoefct.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jccoefct.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jccoefct.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jccolor.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jccolor.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jccolor.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jcdctmgr.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcdctmgr.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcdctmgr.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jchuff.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jchuff.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jchuff.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jcinit.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcinit.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcinit.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jcmainct.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcmainct.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcmainct.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jcmarker.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcmarker.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcmarker.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jcmaster.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcmaster.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcmaster.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jcomapi.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcomapi.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcomapi.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jcparam.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcparam.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcparam.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jcprepct.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcprepct.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcprepct.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jcsample.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcsample.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jcsample.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jctrans.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jctrans.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jctrans.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jdapimin.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdapimin.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdapimin.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jdapistd.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdapistd.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdapistd.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jdarith.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdarith.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdarith.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jdatadst.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdatadst.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdatadst.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jdatasrc.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdatasrc.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdatasrc.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jdcoefct.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdcoefct.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdcoefct.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jdcolor.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdcolor.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdcolor.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jddctmgr.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jddctmgr.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jddctmgr.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jdhuff.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdhuff.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdhuff.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jdinput.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdinput.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdinput.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jdmainct.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdmainct.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdmainct.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jdmarker.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdmarker.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdmarker.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jdmaster.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdmaster.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdmaster.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jdmerge.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdmerge.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdmerge.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jdpostct.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdpostct.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdpostct.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jdsample.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdsample.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdsample.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jdtrans.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdtrans.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jdtrans.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jerror.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jerror.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jerror.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jfdctflt.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jfdctflt.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jfdctflt.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jfdctfst.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jfdctfst.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jfdctfst.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jfdctint.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jfdctint.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jfdctint.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jidctflt.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jidctflt.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jidctflt.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jidctfst.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jidctfst.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jidctfst.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jidctint.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jidctint.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jidctint.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jmemmgr.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jmemmgr.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jmemmgr.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jmemnobs.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jmemnobs.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jmemnobs.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jquant1.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jquant1.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jquant1.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jquant2.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jquant2.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jquant2.c.o.d"
+  "/Users/jingyuanchew/Documents/wxWidgets_tutorial/wxwidget_Cplusplus_note/wxwidgets-3.2.1/src/jpeg/jutils.c" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jutils.c.o" "gcc" "wxwidgets-3.2.1/libs/CMakeFiles/wxjpeg.dir/__/__/__/src/jpeg/jutils.c.o.d"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")
